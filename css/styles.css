@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 0 5px 0 black;
+  position: fixed;
+  background-color: #150f0f;
+  z-index: 10;
+}
+
+.nav {
+  width: 70%;
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-user {
+  width: 220px;
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav input {
+  width: 60%;
+  height: 50%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.img-profile {
+  border-radius: 30px;
+}
+
+.nick-user {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #f8f8f8;
+}
+
+main {
+  position: absolute;
+  top: 50px;
+}
+
+p {
+  height: 100px;
+  margin: 200px;
+}
+/* aquí termina todo el header  */
+.contain {
+  position: relative;
+  top: 60px;
+  display: grid;
+  grid-template-columns: 8% 92%;
+}
+
+.section1 {
+  border: 1px solid red;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 100px) 400px 100px;
+  z-index: 1;
+}
+
+.section1 button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.section1 button img {
+  display: block;
+  margin: 5px auto;
+}
+
+#likes img {
+  position: relative;
+  bottom: 150px;
+}
+
+#likes span {
+  position: relative;
+  bottom: 150px;
+}
+
+/* galeria de peliculas */
+.section2 h4 {
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 60px;
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 15px;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.movie {
+  position: relative;
+  z-index: 1;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-movie {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+
+  z-index: 10;
+  left: -200px;
+  bottom: -200px;
+  width: 100%;
+  display: none;
+  cursor: pointer;
+}
+
+.movie:hover .info-movie {
+  display: block;
+}
+
+.section2 h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
